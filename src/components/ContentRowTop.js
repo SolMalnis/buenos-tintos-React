@@ -2,7 +2,8 @@ import React from 'react'
 import ContentRowMovies from './ContentRowMovies'
 import LastMovieInDb from './LastMovieInDb'
 import ProductsInDB from './ProductsInDB'
-
+import TotalProducts from './TotalProducts'
+import TotalUsers from './TotalUsers'
 
 
 export default function ContentRowTop() {
@@ -15,9 +16,11 @@ export default function ContentRowTop() {
 				
 					
 					<div className="row">
-						<ContentRowMovies left= 'card border-left-primary shadow h-100 py-2' text='text-xs font-weight-bold text-primary text-uppercase mb-1' name='Movies in Data Base' number={21}  icono='fas fa-film fa-2x text-gray-300'/>
-						<ContentRowMovies left= 'card border-left-success shadow h-100 py-2' text='text-xs font-weight-bold text-success text-uppercase mb-1' name='Total awards' number={79}  icono='fas fa-award fa-2x text-gray-300'/>
-						<ContentRowMovies left= 'card border-left-warning shadow h-100 py-2' text='text-xs font-weight-bold text-warning text-uppercase mb-1' name='Actors quantity' number={49}  icono='fas fa-user fa-2x text-gray-300'/> 
+						{/*<ContentRowMovies left= 'card border-left-primary shadow h-100 py-2' text='text-xs font-weight-bold text-primary text-uppercase mb-1' name='Movies in Data Base' number={21}  icono='fas fa-film fa-2x text-gray-300'/>  */}
+						{/*<ContentRowMovies left= 'card border-left-primary shadow h-100 py-2' text='text-xs font-weight-bold text-primary text-uppercase mb-1' name='Movies in Data Base' number={21}  icono='fas fa-film fa-2x text-gray-300'/>  */}
+						<TotalProducts />
+						<TotalUsers />
+						
 						
 						{/* <div className="col-md-4 mb-4">
 							<div className="card border-left-primary shadow h-100 py-2">

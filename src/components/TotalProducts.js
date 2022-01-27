@@ -19,7 +19,9 @@ useEffect(()=>{
 useEffect(()=>{
     return ()=> console.log('se desmonto el componente')
 },[])
-  return <div>
+  return <div className="col-md-4 mb-4">
+      <div className="card-body">
       <ContentRowMovies left= 'card border-left-primary shadow h-100 py-2' text='text-xs font-weight-bold text-primary text-uppercase mb-1' name='Products in Data Base' number={products.count}  icono='fas fa-film fa-2x text-gray-300'/>
+      </div>
   </div>;
 }
